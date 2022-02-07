@@ -6,11 +6,11 @@ import os
 import shutil
 def job():
     # file_targetname - имя+путь куда копировать
-    file_targetname = f'C:\\test\testFile.jpg'
+    file_targetname = f'C:\\\\test\\testFile.jpg'
     # file_newname_newfile - имя для бэкапа
-    file_newname_newfile = f'C:\\test\testFile_{time.strftime("%Y%m%d", time.localtime())}.jpg'
+    file_newname_newfile = f'C:\\\\test\\testFile_{time.strftime("%Y%m%d", time.localtime())}.jpg'
     # имя настоящего файла (какой копируем)
-    real_file = f'C:\\testFile.jpg'
+    real_file = f'C:\\\\testFile.jpg'
 
     os.rename(file_targetname, file_newname_newfile)   
     print(time.strftime("%Y%m%d", time.localtime()),"renamed")
