@@ -15,11 +15,11 @@ def job():
     os.rename(file_targetname, file_newname_newfile)   
     print(time.strftime("%Y%m%d", time.localtime()),"renamed")
 
-    time.sleep(10)
+    time.sleep(3)
 
     shutil.copyfile(real_file, file_targetname)
     print(time.strftime("%Y%m%d", time.localtime()),"copied")
-    time.sleep(10)
+    time.sleep(3)
    
 schedule.every().day.at("02:10").do(job) 
 print(f'Starting at {time.ctime()}')
